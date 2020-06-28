@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ product.name }}
+{% endblock %}
+
+{% block header_title %}
+   {{ product.name }}
+{% endblock %}
+
+{% block header_description %}
+    {{ product.description }}
+{% endblock %}
+
+{% block content %}
+        {% include 'product_info.html' %}
+{% endblock %}
